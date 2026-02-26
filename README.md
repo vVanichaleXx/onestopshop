@@ -1,16 +1,57 @@
-# React + Vite
+# OneStopShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OneStopShop is a modern e-commerce web application built with React and Vite. It features a clean, responsive interface with a light theme and smooth animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Catalog:** Browse a categorized list of products.
+- **Shopping Cart:** Add items to your cart, update quantities, and prepare for checkout.
+- **User Authentication:** Support for user registration, login, and secure sessions.
+- **User Dashboard:** Dedicated profile page for users to view their order history.
+- **Admin Panel:** Secure interface for administrators to manage the product catalog and overview user orders.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, React Router DOM, Framer Motion (for fluid animations), Lucide React (for icons)
+- **Styling:** Vanilla CSS utilizing a customized design system with CSS variables
+- **Build Tool:** Vite
+- **Backend:** Express.js REST API
+- **Database:** SQLite (local file-based storage)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v20+ recommended)
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vVanichaleXx/onestopshop.git
+   cd onestopshop
+   ```
+
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application Locally
+
+Start both the Vite frontend development server and the Express backend API simultaneously using the provided `dev` script:
+
+```bash
+npm run dev
+```
+
+- The frontend application will be served at `http://localhost:5173`
+- The backend API server will listen on `http://localhost:3001`
+
+## Project Structure
+
+- `src/`: Client-side React source code, components, contexts, and pages
+- `server/`: Backend Express.js server, route handlers, middleware, and SQLite database
+- `public/`: Static publicly served assets
